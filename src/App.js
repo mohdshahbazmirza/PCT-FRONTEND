@@ -6,7 +6,7 @@ import Home from "./Pages/Home";
 import Tours from "./Pages/Tours";
 import Contact from "./Pages/Contact";
 import AboutUs from "./Pages/AboutUs";
-import Actvity from "./Pages/activity";
+import Actvity from "./Pages/Activity";
 import TermaAndConditions from "./Pages/TermaAndConditions";
 import Cart from "./Pages/Cart";
 
