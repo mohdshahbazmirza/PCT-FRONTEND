@@ -13,14 +13,16 @@ const ActivityMain = () => {
   const [error, setError] = useState(null);
   const { id } = useParams();
 
+  const url = process.env.BACKEND_URL;
+
   useEffect(() => {
     const fetchTours = async () => {
       setLoading(true);
       try {
-        const res2 = await axios.get(`/tours/get-activity-info/${id}`);
+        const res2 = await axios.get(`${url}/tours/get-activity-info/${id}`);
         setOverview(res2.data);
         console.log(id,"id");
-        const res = await axios.get(`tours/get-activity/${id}`);
+        const res = await axios.get(`${url}/tours/get-activity/${id}`);
         setTour(res.data);
         // setTour(MockActivityDetails[0]);
       } catch (err) {

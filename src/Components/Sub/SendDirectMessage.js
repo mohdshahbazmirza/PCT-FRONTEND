@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+const url = process.env.BACKEND_URL;
 
 const SendDirectMessage = () => {
   const [formData, setFormData] = useState({
@@ -25,7 +26,7 @@ const SendDirectMessage = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await axios.post("/contact", formData); // Update with your server endpoint
+      const response = await axios.post(`${url}/contact`, formData); // Update with your server endpoint
       console.log("Message sent successfully:", response.data);
       // Optionally, reset form and show a success message
       setFormData({

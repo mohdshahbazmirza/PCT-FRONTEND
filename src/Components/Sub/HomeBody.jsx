@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import TourCard from "./TourCard";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import { MockActivityDetails } from "../Mock";
+const url = process.env.BACKEND_URL;
 const HomeBody = () => {
   const [tours, setTours] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -11,7 +11,7 @@ const HomeBody = () => {
   useEffect(() => {
     const fetchTours = async () => {
       try {
-       const response = await axios.get("/api/tours/get-all-activity");
+       const response = await axios.get(`${url}/tours/get-all-activity`);
         setTours(response.data);
         //console.log(response.data);
         // setTours(MockActivityDetails);
