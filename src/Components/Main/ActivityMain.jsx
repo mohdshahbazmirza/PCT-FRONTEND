@@ -17,10 +17,10 @@ const ActivityMain = () => {
     const fetchTours = async () => {
       setLoading(true);
       try {
-        const res2 = await axios.get(`/api/tours/get-activity-info/${id}`);
+        const res2 = await axios.get(`/tours/get-activity-info/${id}`);
         setOverview(res2.data);
         console.log(id,"id");
-        const res = await axios.get(`/api/tours/get-activity/${id}`);
+        const res = await axios.get(`tours/get-activity/${id}`);
         setTour(res.data);
         // setTour(MockActivityDetails[0]);
       } catch (err) {

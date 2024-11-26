@@ -25,7 +25,7 @@ const SendDirectMessage = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await axios.post("/api/contact", formData); // Update with your server endpoint
+      const response = await axios.post("/contact", formData); // Update with your server endpoint
       console.log("Message sent successfully:", response.data);
       // Optionally, reset form and show a success message
       setFormData({

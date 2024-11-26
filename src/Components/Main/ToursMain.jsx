@@ -11,7 +11,7 @@ const ToursMain = () => {
   useEffect(() => {
     const fetchTours = async () => {
       try {
-        const res = await axios.get("/api/tours/get-all-activity");
+        const res = await axios.get("/tours/get-all-activity");
         setTours(res.data);
         // setTours(MockActivityDetails);
         setLoading(false);
