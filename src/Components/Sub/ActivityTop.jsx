@@ -1,9 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { StarIcon } from "@heroicons/react/20/solid";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
-import image1 from "../../../public/img/activities/atlantis-waterpark-dubai-1.jpeg";
-import image2 from "../../../public/img/activities/atlantis-waterpark-dubai-2.jpeg";
-import image3 from "../../../public/img/activities/atlantis-waterpark-dubai-3.jpeg";
 
 const ActivityTop = ({ tour }) => {
   const rating = tour?.rating ?? 0;

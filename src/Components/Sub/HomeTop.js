@@ -5,7 +5,7 @@ import Search from "./Search";
 const HomeTop = () => {
   const data = [
     {
-      link: "https://media.istockphoto.com/id/1460819165/photo/dubai-desert-at-sunset-united-arab-emirates.jpg?s=1024x1024&w=is&k=20&c=Em5DRhh849IFVxSi8b16FzRXXQYS4GsEdXsw-repym4=",
+      link: "https://www.desertsafariin-dubai.com/images/paketi/desert-safari-dubai-morning-cover.jpg",
       title: "Dubai Desert",
     },
     {
@@ -53,3 +53,5 @@ const HomeTop = () => {
 };
 
 export default HomeTop;
+
+// git checkout -b sub-branch

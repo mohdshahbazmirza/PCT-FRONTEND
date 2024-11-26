@@ -60,12 +60,12 @@ module.exports = {
     historyApiFallback: true,
     setupMiddlewares: (middlewares, devServer) => {
       devServer.app.use(
-        "/api", 
+        "/api",
         createProxyMiddleware({
-          target: "http://localhost:4001",//backend URL
+          target: "https://alsultantour.onrender.com", //backend URL
           changeOrigin: true,
           pathRewrite: {
-            "^/api": "", 
+            "^/api": "",
           },
         })
       );
