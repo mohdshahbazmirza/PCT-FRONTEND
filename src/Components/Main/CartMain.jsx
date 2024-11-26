@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import useCartStore from "../../Utlis/USeCart";
+import useCartStore from "../../Utlis/UseCart";
 import PaymentDialogue from "./PaymentDialogue";
 import CartCard from "../Sub/CartCard";
 

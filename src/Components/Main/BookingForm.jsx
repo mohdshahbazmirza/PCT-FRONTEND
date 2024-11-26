@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import useCartStore from "../../Utlis/USeCart";
+import useCartStore from "../../Utlis/UseCart";
 
 const BookingForm = ({ tour }) => {
   const [selections, setSelections] = useState({});
