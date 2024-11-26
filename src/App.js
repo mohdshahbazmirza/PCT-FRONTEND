@@ -23,7 +23,7 @@ const App = () => {
         <Route path="/termsconditions" element={<TermaAndConditions />} />
         <Route path="/tours/:id" element={<Actvity />} />
         <Route path="/cart" element={<Cart/>} />
-      </Routes>
+      </Routes> 
     </Router>
   );
 };
