@@ -2,12 +2,14 @@ import React, { useEffect, useState } from "react";
 import TourCard from "./TourCard";
 import axios from "axios";
 import { Link } from "react-router-dom";
-const url = process.env.BACKEND_URL;
+const url = process.env.REACT_APP_BACKEND_URL;
+
 const HomeBody = () => {
   const [tours, setTours] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-
+  console.log("---------------------", url);
+  console.log("========================",process.env.REACT_APP_BACKEND_URL);
   useEffect(() => {
     const fetchTours = async () => {
       try {

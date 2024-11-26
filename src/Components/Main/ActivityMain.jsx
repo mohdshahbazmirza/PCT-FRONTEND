@@ -13,8 +13,8 @@ const ActivityMain = () => {
   const [error, setError] = useState(null);
   const { id } = useParams();
 
-  const url = process.env.BACKEND_URL;
-
+  const url = process.env.REACT_APP_BACKEND_URL;
+console.log("---------------------", url)
   useEffect(() => {
     const fetchTours = async () => {
       setLoading(true);

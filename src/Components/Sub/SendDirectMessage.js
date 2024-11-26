@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-const url = process.env.BACKEND_URL;
+const url = process.env.REACT_APP_BACKEND_URL;
 
 const SendDirectMessage = () => {
   const [formData, setFormData] = useState({

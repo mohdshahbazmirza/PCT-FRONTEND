@@ -3,7 +3,7 @@ import axios from "axios";
 import TourCard from "../Sub/TourCard";
 import { MockActivityDetails } from "../Mock";
 
-const url = process.env.BACKEND_URL
+const url = process.env.REACT_APP_BACKEND_URL;
 
 const ToursMain = () => {
   const [tours, setTours] = useState([]);
