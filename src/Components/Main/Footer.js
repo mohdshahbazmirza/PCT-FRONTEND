@@ -3,6 +3,7 @@ import facebookImage from "../../../public/SocialIcons/facebook-app-symbol.png";
 import tripadvisorImage from "../../../public/SocialIcons/tripadvisor.png"; // Adjust the path as needed
 import Instagram from "../../../public/SocialIcons/instagram.png"; // Adjust the path as needed
 import LogoBlack from "../../../public/img/logo/logoBlack.jpeg";
+import whatsApp from "../../../public/SocialIcons/whatsApp.png";
 
 const Footer = () => {
   const links = [
@@ -16,16 +17,20 @@ const Footer = () => {
   const socials = [
     {
       src: facebookImage,
-      link: "https://www.facebook.com", // Replace with actual link
+      link: "https://www.facebook.com/profile.php?id=61564911219910&mibextid=LQQJ4d", // Replace with actual link
     },
     {
       src: Instagram,
-      link: "https://www.tripadvisor.com", // Replace with actual link
+      link: "https://www.instagram.com/pointclicktourism/", // Replace with actual link
     },
     {
       src: tripadvisorImage,
-      link: "https://www.tripadvisor.com", // Replace with actual link
+      link: "https://www.tripadvisor.com/Attraction_Review-g295424-d26771513-Reviews-POINT_CLICK_TOURISM-Dubai_Emirate_of_Dubai.html", // Replace with actual link
     },
+    {
+      src: whatsApp,
+      link: "https://api.whatsapp.com/send/?phone=%2B971557465140&text=I+am+interested+in+learning+more+about+your+travel+and+tour+packages+in+Dubai.+Can+you+please+provide+me+with+details%3F+Thank+you%21&type=phone_number&app_absent=0"
+    }
   ];
 
   const year = new Date().getFullYear();

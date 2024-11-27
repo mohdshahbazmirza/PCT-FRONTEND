@@ -23,7 +23,11 @@ const Map = () => {
   return (
     <div className="h-96 w-full bg-white col-span-2 border p-4">
       <div className="text-xl mb-5">
-        Visit Us: <span className="text-sm">13A Street, Dubai, Dubai, AE</span>
+        Visit Us:{" "}
+        <span className="text-sm">
+          Office 104-0182 Mufateeh Al Makhazan Stores Management Building 2,
+          Dubai Investment Park 2, Dubai
+        </span>
       </div>
 
       {mapLoaded && (
@@ -37,7 +41,7 @@ const Map = () => {
             <Marker position={position} onClick={() => setShowInfoWindow(true)}>
               {showInfoWindow && (
                 <InfoWindow onCloseClick={() => setShowInfoWindow(false)}>
-                  <div>13A Street, Dubai, Dubai, AE</div>
+                  <div>Dubai investment park 2</div>
                 </InfoWindow>
               )}
             </Marker>
